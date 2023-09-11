@@ -5,8 +5,8 @@ const redIcon = new L.Icon({
     popupAnchor: [1, -34],
   });
   
-const map = L.map("map").setView([50.822807, 7.110181], 13);
+const map = L.map("map").setView([50.8216953, 7.110878], 13);
 
 L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(map);
 
-const marker = L.marker([50.822807, 7.110181], { icon: redIcon }).addTo(map);
+const marker = L.marker([50.8216953, 7.110878], { icon: redIcon }).addTo(map);
