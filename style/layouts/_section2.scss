@@ -1,0 +1,45 @@
+.Sec2{
+    .container{
+        margin-top: 262px;
+        margin-bottom: 199px;
+        display: flex;
+        flex-direction: row;
+        .box-L{
+            margin-left: 164px;
+            h3{
+                margin: 30px 30px 30px 0px;
+                font-family: $font-kanit;
+                font-size: 20px;
+                color: $Gray-b;
+                letter-spacing: 2px;
+            }
+            h1{
+                font-family: $font-kanit;
+                font-size: 27px;
+                font-weight: bold;
+                color: #333333;
+                letter-spacing: 2.7px;
+            }
+        }.box-R{
+            margin-right: 319px;
+            margin-left: 347px;
+            p{
+                text-align: left;
+                letter-spacing: 1.30px;
+                font-family: $font-Open-Sans;
+                font-size: 18px;
+                line-height: 1.5;
+            }
+        }
+        .btn{
+            margin-top: 35px;
+            margin-bottom: 120px;
+            .btn-R{
+                 @include btn-Red; 
+            }
+            .btn-n{
+                @include btn-Sec;
+            }
+        }
+    }
+}

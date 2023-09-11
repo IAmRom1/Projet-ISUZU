@@ -1,0 +1,41 @@
+.bloc{
+    position: fixed;
+    right: 0px;
+    color: $white;
+    letter-spacing: 0.01px;
+    font-family: $font-kanit;
+
+    width: 149px;
+    height: 236px;
+    background: $Gray;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    ul {
+        li {
+          margin: 20px;
+          margin-right: 40px;
+          transition: 0.2s;
+          &:hover{
+              color: $Red;
+              transform: scale(1.13);
+              transition: 0.2s;
+          }
+        }
+        // .a{
+        //     &:after {
+        //         content: "";
+        //         width: 4px;
+        //         height: 4px;
+        //         background: $white;
+        //         position: absolute;
+        //         top: 30px;
+        //         right: 15px;
+        //         transform: translateY(-50%);
+        //         &:hover{
+        //             color: $Red;
+        //           }
+        //     }
+        // }
+    }
+}

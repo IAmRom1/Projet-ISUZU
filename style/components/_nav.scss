@@ -1,0 +1,21 @@
+nav{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 62px;
+    background: $Gray;
+    ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        li{
+            color: $white;
+            font-family: $font-Open-Sans;
+            font-weight: bold;
+            margin: 20px;
+            margin-left: 113px;
+            margin-right: 113px;
+        }
+    }
+}

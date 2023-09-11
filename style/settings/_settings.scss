@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "Kanit";
+    src: url(../../Assets/fonts/Kanit/Kanit-Regular.ttf);
+}
+@font-face {
+    font-family: "Open Sans";
+    src: url(../../Assets/fonts/Open_San/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+body{
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 9px;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: $Red;
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}

@@ -1,1 +1,206 @@
-/*# sourceMappingURL=index.css.map */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+@font-face {
+  font-family: "Kanit";
+  src: url(../../Assets/fonts/Kanit/Kanit-Regular.ttf);
+}
+@font-face {
+  font-family: "Open Sans";
+  src: url(../../Assets/fonts/Open_San/OpenSans-VariableFont_wdth\,wght.ttf);
+}
+body {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #FF0000;
+  box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+.Sec1 .container {
+  position: absolute;
+  top: 260px;
+  width: 100%;
+  display: flex;
+  margin-top: 130px;
+}
+.Sec1 .container .text h1 {
+  color: white;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  margin-left: 208px;
+  font-size: 3rem;
+  font-weight: 700;
+}
+.Sec1 .scroll {
+  position: absolute;
+  bottom: 51px;
+  right: 50%;
+}
+
+.Sec2 .container {
+  margin-top: 262px;
+  margin-bottom: 199px;
+  display: flex;
+  flex-direction: row;
+}
+.Sec2 .container .box-L {
+  margin-left: 164px;
+}
+.Sec2 .container .box-L h3 {
+  margin: 30px 30px 30px 0px;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  color: #6D727B;
+  letter-spacing: 2px;
+}
+.Sec2 .container .box-L h1 {
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 27px;
+  font-weight: bold;
+  color: #333333;
+  letter-spacing: 2.7px;
+}
+.Sec2 .container .box-R {
+  margin-right: 319px;
+  margin-left: 347px;
+}
+.Sec2 .container .box-R p {
+  text-align: left;
+  letter-spacing: 1.3px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+}
+.Sec2 .container .btn {
+  margin-top: 35px;
+  margin-bottom: 120px;
+}
+.Sec2 .container .btn .btn-R {
+  padding: 11px 63px;
+  border-radius: 50px;
+  background: #E3000B;
+  letter-spacing: 1.26px;
+  color: white;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  border: none;
+  margin: 35px 35px 0px 0px;
+  transition: 0.3s;
+}
+.Sec2 .container .btn .btn-R:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.Sec2 .container .btn .btn-n {
+  padding: 11px 63px;
+  border-radius: 50px;
+  background: white;
+  letter-spacing: 1.26px;
+  color: #333333;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  font-size: 17px;
+  border: solid 3px #333333;
+  margin: 35px 35px 0px 0px;
+  transition: 0.3s;
+}
+.Sec2 .container .btn .btn-n:hover {
+  background: #333333;
+  color: white;
+  transition: 0.3s;
+}
+
+.bloc {
+  position: fixed;
+  right: 0px;
+  color: white;
+  letter-spacing: 0.01px;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 149px;
+  height: 236px;
+  background: rgba(51, 51, 51, 0.7490196078);
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+.bloc ul li {
+  margin: 20px;
+  margin-right: 40px;
+  transition: 0.2s;
+}
+.bloc ul li:hover {
+  color: #FF0000;
+  transform: scale(1.13);
+  transition: 0.2s;
+}
+
+nav {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 62px;
+  background: rgba(51, 51, 51, 0.7490196078);
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li {
+  color: white;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 20px;
+  margin-left: 113px;
+  margin-right: 113px;
+}/*# sourceMappingURL=index.css.map */
