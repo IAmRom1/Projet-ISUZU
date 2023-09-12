@@ -1,9 +1,10 @@
 .Sec2{
     .container{
-        margin-top: 262px;
+        margin-top: 200px;
         margin-bottom: 199px;
         display: flex;
         flex-direction: row;
+        align-items: baseline;
         .box-L{
             margin-left: 164px;
             h3{
@@ -25,15 +26,15 @@
             margin-left: 347px;
             p{
                 text-align: left;
-                letter-spacing: 1.30px;
+                letter-spacing: 1.26px;
                 font-family: $font-Open-Sans;
                 font-size: 18px;
-                line-height: 1.5;
+                line-height: 30px;
             }
         }
         .btn{
-            margin-top: 35px;
-            margin-bottom: 120px;
+            // margin-top: 35px;
+            // margin-bottom: 90px;
             .btn-R{
                  @include btn-Red; 
             }

@@ -1,0 +1,27 @@
+.Sec7{
+    h1{
+        @include title;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        margin-top: 30px;
+        .avis{
+            display: flex;
+            flex-direction: row;
+                align-items: center;
+            margin-left: 273px;
+            h2{
+                font-size: 100px;
+                font-family: $font-kanit;
+                color: $Red-2;
+            }
+            .star{
+                margin-left: 39px;
+                display: flex;
+                flex-direction: row;
+                
+            }
+        }
+    }
+}

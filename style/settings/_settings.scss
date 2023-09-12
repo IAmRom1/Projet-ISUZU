@@ -6,6 +6,9 @@
     font-family: "Open Sans";
     src: url(../../Assets/fonts/Open_San/OpenSans-VariableFont_wdth\,wght.ttf);
 }
+html {
+    scroll-behavior: smooth;
+  }
 body{
     overflow-x: hidden;
 }

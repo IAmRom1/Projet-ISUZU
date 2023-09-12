@@ -1,0 +1,33 @@
+@mixin no-sec{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3{
+                font-size: 20px;
+                font-family: $font-kanit;
+                color: $Gray2;
+                font-weight: 500;
+            }
+            img{
+                margin-top: 52.57px;
+                width: 264.61px;
+                height: 181.22px;
+                opacity: 0.55;
+            }
+}
+@mixin sec{
+            margin: 81.72px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            h3{
+                color: $Red-2;
+                font-size: 25px;
+                font-family: $font-kanit;
+                font-weight: 600;
+            }img{
+                margin-top: 14.39px;
+                width: 470.16px;
+                height: 321.99px;
+            }
+}

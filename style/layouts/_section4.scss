@@ -1,0 +1,30 @@
+.Sec4{
+    margin-top: 101px;
+    h1{
+        @include title;
+    }.container-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        .left-card{
+            @include no-sec;
+        }.middle-card{
+            @include sec;
+        }.right-card{
+            @include no-sec;
+        }
+    }p{
+        color: $Gray2;
+        font-size: 18px;
+        text-align: left;
+        font-family: $font-Open-Sans;
+        letter-spacing: 0.54px;
+        line-height: 30px;
+        margin: 0px 570.03px 0px 570.03px;
+    }.btn-R{
+        @include btn-Red;
+        margin-left: 570.03px;
+        margin-bottom: 159.98px;
+    }
+}

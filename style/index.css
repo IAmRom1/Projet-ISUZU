@@ -50,6 +50,10 @@ table {
   font-family: "Open Sans";
   src: url(../../Assets/fonts/Open_San/OpenSans-VariableFont_wdth\,wght.ttf);
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -63,6 +67,59 @@ body {
   border-radius: 4px;
   background-color: #FF0000;
   box-shadow: 0 0 1px rgba(255, 255, 255, 0.5);
+}
+
+nav {
+  z-index: 999;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 62px;
+  background: rgba(51, 51, 51, 0.7490196078);
+}
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav ul li {
+  color: white;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  margin: 20px;
+  margin-left: 113px;
+  margin-right: 113px;
+}
+
+.bloc {
+  position: fixed;
+  right: 0px;
+  color: white;
+  letter-spacing: 0.01px;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 149px;
+  height: 236px;
+  background: rgba(51, 51, 51, 0.7490196078);
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+.bloc ul li {
+  margin: 20px;
+  margin-right: 40px;
+}
+.bloc ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s, transform 0.2s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+.bloc ul li a:hover {
+  color: #FF0000;
+  transform: scale(1.5);
 }
 
 .Sec1 .container {
@@ -86,10 +143,11 @@ body {
 }
 
 .Sec2 .container {
-  margin-top: 262px;
+  margin-top: 200px;
   margin-bottom: 199px;
   display: flex;
   flex-direction: row;
+  align-items: baseline;
 }
 .Sec2 .container .box-L {
   margin-left: 164px;
@@ -114,44 +172,48 @@ body {
 }
 .Sec2 .container .box-R p {
   text-align: left;
-  letter-spacing: 1.3px;
+  letter-spacing: 1.26px;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
   font-size: 18px;
-  line-height: 1.5;
-}
-.Sec2 .container .btn {
-  margin-top: 35px;
-  margin-bottom: 120px;
+  line-height: 30px;
 }
 .Sec2 .container .btn .btn-R {
-  padding: 11px 63px;
-  border-radius: 50px;
+  padding: 8px 13px;
+  border-radius: 26px;
   background: #E3000B;
   letter-spacing: 1.26px;
   color: white;
   font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: normal;
+  font-weight: lighter;
   font-size: 17px;
   border: none;
   margin: 35px 35px 0px 0px;
   transition: 0.3s;
+}
+.Sec2 .container .btn .btn-R a {
+  text-decoration: none;
+  color: white;
 }
 .Sec2 .container .btn .btn-R:hover {
   opacity: 0.8;
   transition: 0.3s;
 }
 .Sec2 .container .btn .btn-n {
-  padding: 11px 63px;
-  border-radius: 50px;
+  padding: 8px 13px;
+  border-radius: 26px;
   background: white;
   letter-spacing: 1.26px;
   color: #333333;
   font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  font-weight: normal;
+  font-weight: lighter;
   font-size: 17px;
   border: solid 3px #333333;
   margin: 35px 35px 0px 0px;
   transition: 0.3s;
+}
+.Sec2 .container .btn .btn-n a {
+  text-decoration: none;
+  color: white;
 }
 .Sec2 .container .btn .btn-n:hover {
   background: #333333;
@@ -159,48 +221,494 @@ body {
   transition: 0.3s;
 }
 
-.bloc {
-  position: fixed;
-  right: 0px;
-  color: white;
-  letter-spacing: 0.01px;
-  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  width: 149px;
-  height: 236px;
-  background: rgba(51, 51, 51, 0.7490196078);
-  text-align: right;
+.Sec3 {
+  display: flex;
+  flex-direction: row;
+}
+.Sec3 .box-L h2 {
+  visibility: hidden;
+}
+.Sec3 .box-L img {
+  width: 1103px;
+  height: 783px;
+}
+.Sec3 .box-R {
+  margin: 0px 225px 0px 100px;
   display: flex;
   flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
 }
-.bloc ul li {
-  margin: 20px;
-  margin-right: 40px;
-  transition: 0.2s;
+.Sec3 .box-R h2 {
+  color: #333333;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 34px;
+  letter-spacing: 3.4px;
 }
-.bloc ul li:hover {
-  color: #FF0000;
-  transform: scale(1.13);
-  transition: 0.2s;
+.Sec3 .box-R p {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.54px;
+  text-align: left;
+  line-height: 30px;
+}
+.Sec3 .box-R .btn-R {
+  padding: 8px 13px;
+  border-radius: 26px;
+  background: #E3000B;
+  letter-spacing: 1.26px;
+  color: white;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  font-size: 17px;
+  border: none;
+  margin: 35px 35px 0px 0px;
+  transition: 0.3s;
+}
+.Sec3 .box-R .btn-R a {
+  text-decoration: none;
+  color: white;
+}
+.Sec3 .box-R .btn-R:hover {
+  opacity: 0.8;
+  transition: 0.3s;
 }
 
-nav {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 62px;
-  background: rgba(51, 51, 51, 0.7490196078);
+.Sec4 {
+  margin-top: 101px;
 }
-nav ul {
+.Sec4 h1 {
+  margin-top: 107px;
+  color: #333333;
+  font-size: 34px;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 50px;
+  font-weight: 600;
+  margin-left: 273px;
+}
+.Sec4 .container-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.Sec4 .container-card .left-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Sec4 .container-card .left-card h3 {
+  font-size: 20px;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #333333;
+  font-weight: 500;
+}
+.Sec4 .container-card .left-card img {
+  margin-top: 52.57px;
+  width: 264.61px;
+  height: 181.22px;
+  opacity: 0.55;
+}
+.Sec4 .container-card .middle-card {
+  margin: 81.72px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Sec4 .container-card .middle-card h3 {
+  color: #E3000B;
+  font-size: 25px;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 600;
+}
+.Sec4 .container-card .middle-card img {
+  margin-top: 14.39px;
+  width: 470.16px;
+  height: 321.99px;
+}
+.Sec4 .container-card .right-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Sec4 .container-card .right-card h3 {
+  font-size: 20px;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #333333;
+  font-weight: 500;
+}
+.Sec4 .container-card .right-card img {
+  margin-top: 52.57px;
+  width: 264.61px;
+  height: 181.22px;
+  opacity: 0.55;
+}
+.Sec4 p {
+  color: #333333;
+  font-size: 18px;
+  text-align: left;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  letter-spacing: 0.54px;
+  line-height: 30px;
+  margin: 0px 570.03px 0px 570.03px;
+}
+.Sec4 .btn-R {
+  padding: 8px 13px;
+  border-radius: 26px;
+  background: #E3000B;
+  letter-spacing: 1.26px;
+  color: white;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  font-size: 17px;
+  border: none;
+  margin: 35px 35px 0px 0px;
+  transition: 0.3s;
+  margin-left: 570.03px;
+  margin-bottom: 159.98px;
+}
+.Sec4 .btn-R a {
+  text-decoration: none;
+  color: white;
+}
+.Sec4 .btn-R:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.Sec5 {
+  display: flex;
+  flex-direction: row;
+}
+.Sec5 .box-L {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  margin: 0px 208px 0px 208px;
+}
+.Sec5 .box-L h3 {
+  font-size: 16px;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #6D727B;
+  letter-spacing: 2px;
+  line-height: 30px;
+  font-weight: 600;
+  margin-bottom: 11px;
+}
+.Sec5 .box-L h2 {
+  color: #333333;
+  font-size: 34px;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: 600;
+  letter-spacing: 3.4px;
+  line-height: 34px;
+  margin-bottom: 24px;
+}
+.Sec5 .box-L p {
+  color: #333333;
+  font-size: 18px;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 30px;
+  letter-spacing: 0.54px;
+}
+.Sec5 .box-L .btn-R {
+  padding: 8px 13px;
+  border-radius: 26px;
+  background: #E3000B;
+  letter-spacing: 1.26px;
+  color: white;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  font-size: 17px;
+  border: none;
+  margin: 35px 35px 0px 0px;
+  transition: 0.3s;
+}
+.Sec5 .box-L .btn-R a {
+  text-decoration: none;
+  color: white;
+}
+.Sec5 .box-L .btn-R:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.Sec5 .box-L .btn-n {
+  padding: 8px 13px;
+  border-radius: 26px;
+  background: white;
+  letter-spacing: 1.26px;
+  color: #333333;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  font-size: 17px;
+  border: solid 3px #333333;
+  margin: 35px 35px 0px 0px;
+  transition: 0.3s;
+}
+.Sec5 .box-L .btn-n a {
+  text-decoration: none;
+  color: white;
+}
+.Sec5 .box-L .btn-n:hover {
+  background: #333333;
+  color: white;
+  transition: 0.3s;
+}
+.Sec5 .box-R img {
+  width: 1133px;
+  height: 776px;
+}
+
+.Sec6 h1 {
+  margin-top: 107px;
+  color: #333333;
+  font-size: 34px;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 50px;
+  font-weight: 600;
+  margin-left: 273px;
+}
+.Sec6 .container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+  margin-top: 35px;
 }
-nav ul li {
-  color: white;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+.Sec6 .container .box-1 {
+  display: flex;
+  flex-direction: column;
+  margin-left: 273px;
+}
+.Sec6 .container .box-1 h3 {
+  color: #333333;
   font-weight: bold;
-  margin: 20px;
-  margin-left: 113px;
-  margin-right: 113px;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  letter-spacing: 2.2px;
+  line-height: 33px;
+  margin-bottom: 10px;
+}
+.Sec6 .container .box-1 p {
+  color: #333333;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  letter-spacing: 0.54px;
+}
+.Sec6 .container .box-2 h3 {
+  color: #333333;
+  font-weight: bold;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  letter-spacing: 2.2px;
+  line-height: 33px;
+  margin-bottom: 10px;
+}
+.Sec6 .container .box-2 #map {
+  z-index: 1;
+  width: 348px;
+  height: 324px;
+  border: solid 1.8px #E3000B;
+}
+.Sec6 .container .box-2 .btn-R {
+  padding: 8px 13px;
+  border-radius: 26px;
+  background: #E3000B;
+  letter-spacing: 1.26px;
+  color: white;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-weight: lighter;
+  font-size: 17px;
+  border: none;
+  margin: 35px 35px 0px 0px;
+  transition: 0.3s;
+  margin-bottom: 100px;
+}
+.Sec6 .container .box-2 .btn-R a {
+  text-decoration: none;
+  color: white;
+}
+.Sec6 .container .box-2 .btn-R:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+.Sec6 .container .box-3 {
+  margin-right: 288px;
+}
+.Sec6 .container .box-3 h3 {
+  color: #333333;
+  font-weight: bold;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 22px;
+  letter-spacing: 2.2px;
+  line-height: 33px;
+  margin-bottom: 10px;
+}
+.Sec6 .container .box-3 h4 {
+  color: #333333;
+  font-size: 18px;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 2.2px;
+  margin-top: 15px;
+}
+.Sec6 .container .box-3 .content-top {
+  display: flex;
+  flex-direction: row;
+}
+.Sec6 .container .box-3 .content-top .box1 {
+  margin-top: 10px;
+  margin-right: 81px;
+  color: #333333;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.Sec6 .container .box-3 .content-top .box2 {
+  margin-top: 10px;
+  margin-bottom: 14px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.Sec6 .container .box-3 .content-bottom {
+  display: flex;
+  flex-direction: row;
+}
+.Sec6 .container .box-3 .content-bottom .box1 {
+  margin-top: 10px;
+  margin-right: 81px;
+  color: #333333;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.Sec6 .container .box-3 .content-bottom .box2 {
+  margin-top: 10px;
+  margin-bottom: 14px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+.Sec6 .container .box-3 .comment {
+  margin-top: 15px;
+  margin-bottom: 14px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}
+
+.Sec7 h1 {
+  margin-top: 107px;
+  color: #333333;
+  font-size: 34px;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 50px;
+  font-weight: 600;
+  margin-left: 273px;
+}
+.Sec7 .container {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+.Sec7 .container .avis {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 273px;
+}
+.Sec7 .container .avis h2 {
+  font-size: 100px;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #E3000B;
+}
+.Sec7 .container .avis .star {
+  margin-left: 39px;
+  display: flex;
+  flex-direction: row;
+}
+
+.Sec8 h1 {
+  margin-top: 107px;
+  color: #333333;
+  font-size: 34px;
+  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 50px;
+  font-weight: 600;
+  margin-left: 273px;
+}
+.Sec8 img {
+  width: 428px;
+  height: 267px;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1200px;
+  position: relative;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+}
+.slider .wrapper i {
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.slider .wrapper i:active {
+  transform: translateY(-50%) scale(0.9);
+}
+.slider .wrapper i:hover {
+  background: #f2f2f2;
+}
+.slider .wrapper i:first-child {
+  left: -22px;
+  display: none;
+}
+.slider .wrapper i:last-child {
+  right: -22px;
+}
+.slider .carousel {
+  cursor: pointer;
+  overflow: hidden;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+}
+.slider .carousel.dragging {
+  cursor: grab;
+  scroll-behavior: auto;
+}
+.slider .carousel.dragging img {
+  pointer-events: none;
+}
+.slider .carousel img {
+  height: 340px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  margin-left: 14px;
+  width: 33.3333333333%;
+}
+.slider .carousel img:first-child {
+  margin-left: 0px;
+}
+@media screen and (max-width: 900px) {
+  .slider .carousel img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .slider .carousel img {
+    width: 100%;
+  }
 }/*# sourceMappingURL=index.css.map */

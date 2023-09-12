@@ -1,6 +1,7 @@
 nav{
-    position: absolute;
-    top: 0;
+    z-index: 999;
+    position: fixed;
+    top: 0px;
     width: 100%;
     height: 62px;
     background: $Gray;
@@ -18,4 +19,13 @@ nav{
             margin-right: 113px;
         }
     }
+}
+@mixin title{
+    margin-top: 107px;
+    color: $Gray2;
+    font-size: 34px;
+    font-family: $font-kanit;
+    line-height: 50px;
+    font-weight: 600;
+    margin-left: 273px;
 }

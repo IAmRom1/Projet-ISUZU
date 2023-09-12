@@ -1,0 +1,103 @@
+.Sec6{
+    h1{
+        @include title;
+    }.container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 35px;
+        .box-1{
+            display: flex;
+            flex-direction: column;
+            margin-left: 273px;
+            h3{
+                color: $Gray2;
+                font-weight: bold;
+                font-family: $font-kanit;
+                font-size: 22px;
+                letter-spacing: 2.2px;
+                line-height: 33px;
+                margin-bottom: 10px;
+            }p{
+                color: $Gray2;
+                font-family: $font-Open-Sans;
+                font-size: 14px;
+                line-height: 30px;
+                letter-spacing: 0.54px;
+            }
+        }.box-2{
+            h3{
+                color: $Gray2;
+                font-weight: bold;
+                font-family: $font-kanit;
+                font-size: 22px;
+                letter-spacing: 2.2px;
+                line-height: 33px;
+                margin-bottom: 10px;
+            }#map{
+                z-index: 1;
+                width: 348px;
+                height: 324px;
+                border: solid 1.8px $Red-2;
+            }.btn-R{
+                @include btn-Red;
+                margin-bottom: 100px;
+            }
+        }.box-3{
+            margin-right: 288px;
+            h3{
+                color: $Gray2;
+                font-weight: bold;
+                font-family: $font-kanit;
+                font-size: 22px;
+                letter-spacing: 2.2px;
+                line-height: 33px;
+                margin-bottom: 10px;
+            }h4{
+                color: $Gray2;
+                font-size: 18px;
+                font-family: $font-kanit;
+                letter-spacing: 2.2px;
+                margin-top: 15px;
+            }
+            .content-top{
+                display: flex;
+                flex-direction: row;
+                .box1{
+                    margin-top: 10px;
+                    margin-right:81px ;
+                    color: $Gray2;
+                    font-family: $font-Open-Sans;
+                    font-size: 14px;
+                }.box2{
+                    margin-top: 10px;
+                    margin-bottom: 14px;
+                    font-family: $font-Open-Sans;
+                    font-size: 14px;
+                }
+            }
+            .content-bottom{
+                display: flex;
+                flex-direction: row;
+                .box1{
+                    margin-top: 10px;
+                    margin-right:81px ;
+                    color: $Gray2;
+                    font-family: $font-Open-Sans;
+                    font-size: 14px; 
+                }.box2{
+                    margin-top: 10px;
+                    margin-bottom: 14px;
+                    font-family: $font-Open-Sans;
+                    font-size: 14px;
+                }
+            }
+            .comment{
+                    margin-top: 15px;
+                    margin-bottom: 14px;
+                    font-family: $font-Open-Sans;
+                    font-size: 14px;
+            } 
+        }
+    }
+}
