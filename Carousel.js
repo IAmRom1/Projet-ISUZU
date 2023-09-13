@@ -1,5 +1,6 @@
-const carousel = document.querySelector(".carousel"),
-  firstImg = document.querySelectorAll("img")[0];
+const carousel = document.querySelector(".carousel");
+const mouse = document.querySelector(".mouse");
+firstImg = document.querySelectorAll("img")[0];
 let isDragStart = false,
   isDragging = false,
   prevPageX,
@@ -40,6 +41,17 @@ const dragStop = () => {
   isDragging = false;
   autoSlide();
 };
+carousel.addEventListener("mousemove", (e) => {
+  mouse.style.left = e.pageX + "px";
+  mouse.style.top = e.pageY + "px";
+});
+carousel.addEventListener("mouseenter", () => {
+  mouse.style.visibility = "visible";
+});
+
+carousel.addEventListener("mouseleave", () => {
+  mouse.style.visibility = "hidden";
+});
 carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener("touchstart", dragStart);
 document.addEventListener("mousemove", dragging);

@@ -5,23 +5,64 @@
     .container{
         display: flex;
         flex-direction: row;
+        justify-content: space-around;
         margin-top: 30px;
         .avis{
             display: flex;
             flex-direction: row;
-                align-items: center;
-            margin-left: 273px;
+            align-items: center;
+}
             h2{
                 font-size: 100px;
                 font-family: $font-kanit;
                 color: $Red-2;
-            }
-            .star{
-                margin-left: 39px;
+            }.note{
                 display: flex;
-                flex-direction: row;
-                
+                flex-direction: column;
+                align-items: baseline;
+                .star{
+                    margin-left: 39px;
+                    display: flex;
+                    flex-direction: row;
+                    img{
+                        width: 35px;
+                        height: 26px;
+                    }
+                }
+                p{
+                    font-size: 20px;
+                    color: $Gray2;
+                    font-family: $font-kanit;
+                    padding: 18px 18px 18px 0px;
+                }
+            }
+        }.testimony{
+            width: 624px;
+            height: 343px;
+            box-shadow: 0px 0px 30px #00000061;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            h2{
+                text-align: center;
+                padding: 25px;
+                color: $Gray-b;
+                font-size: 30px;
+                font-family: $font-kanit;
+                font-weight: lighter;
+                letter-spacing: 3px;
+            }p{
+                font-size: 18px;
+                color: $Gray2;
+                text-align: center;
+                margin: 0px 66px 0px 66px;
+                letter-spacing: 0.54px;
+                line-height: 30px;
+                margin-bottom: 20px;
+            }img{
+                width: 35px;
+                height: 26px;
             }
         }
     }
-}

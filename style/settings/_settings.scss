@@ -21,3 +21,10 @@ body{
     background-color: $Red;
     box-shadow: 0 0 1px rgba(255, 255, 255, .5);
 }
+img{
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
