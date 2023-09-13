@@ -100,16 +100,6 @@ nav ul li {
   margin-right: 113px;
 }
 
-@media screen and (max-width: 900px) {
-  .carousel img {
-    width: 50%;
-  }
-}
-@media screen and (max-width: 550px) {
-  .carousel img {
-    width: 100%;
-  }
-}
 .bloc {
   position: fixed;
   right: 0px;
@@ -698,15 +688,42 @@ nav ul li {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
 }
+.slider .wrapper i {
+  top: 50%;
+  height: 44px;
+  width: 44px;
+  color: #343F4F;
+  cursor: pointer;
+  font-size: 1.15rem;
+  position: absolute;
+  text-align: center;
+  line-height: 44px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.slider .wrapper i:active {
+  transform: translateY(-50%) scale(0.9);
+}
+.slider .wrapper i:hover {
+  background: #f2f2f2;
+}
+.slider .wrapper i:first-child {
+  left: -22px;
+  display: none;
+}
+.slider .wrapper i:last-child {
+  right: -22px;
+}
 .slider .carousel {
-  cursor: none;
-  position: relative;
+  cursor: pointer;
   overflow: hidden;
   white-space: nowrap;
   scroll-behavior: smooth;
 }
 .slider .carousel.dragging {
-  cursor: none;
+  cursor: grab;
   scroll-behavior: auto;
 }
 .slider .carousel.dragging img {
@@ -725,25 +742,15 @@ nav ul li {
 .slider .carousel img:first-child {
   margin-left: 0px;
 }
-
-.mouse {
-  z-index: 99999999999;
-  position: absolute;
-  background: #FF0000;
-  width: 80px;
-  height: 80px;
-  border-radius: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Kanit", "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  color: white;
-  visibility: hidden;
-  transform: translate(-50%, -50%);
-  cursor: none;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-          user-select: none;
+@media screen and (max-width: 900px) {
+  .slider .carousel img {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 550px) {
+  .slider .carousel img {
+    width: 100%;
+  }
 }
 
 .Sec8 {
@@ -834,4 +841,10 @@ footer .credit ul {
 }
 footer .credit ul li {
   margin: 10px 7px 10px 7px;
+}
+
+@media only screen and (max-width: 600px) {
+  .Sec3 {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=index.css.map */
