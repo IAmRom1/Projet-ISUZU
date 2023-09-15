@@ -2,7 +2,24 @@
     margin-top: 101px;
     h1{
         @include title;
-    }.container-card{
+    }.menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        visibility: hidden;
+        div{
+            width: 90px;
+            height: 90px;
+            border: 1.5px solid #AFAFAF;
+            border-radius: 10pt;
+            margin:25px;
+            img{
+                width: 88px;
+                height: 88px;
+            }
+        }
+    }
+    .container-card{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -24,7 +41,7 @@
         margin: 0% 29.78%;
     }.btn-R{
         @include btn-Red;
-        margin-left: 570.03px;
+        margin-left: 29.77%;
         margin-bottom: 159.98px;
     }
 }

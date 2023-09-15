@@ -21,6 +21,12 @@ footer{
             flex-direction: row;
             li{
                 margin: 5px;
+                svg{
+                    circle:hover{
+                        
+                        fill: $Red-2;
+                    }
+                }
             }
         }
     }.logo{
@@ -62,6 +68,12 @@ footer{
             letter-spacing: 0.42px;
             li{
                 margin: 10px 7px 10px 7px;
+                svg{
+                    circle:hover{
+                        
+                        fill: $Red-2;
+                    }
+                }
             }
         }
     }

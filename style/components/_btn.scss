@@ -9,6 +9,7 @@
                 font-size: 17px;
                 border: none;
                 margin: 35px 35px 0px 0px;
+                user-select: none;
                 transition: 0.3s;
                 a{
                     text-decoration: none;
@@ -30,6 +31,7 @@
     font-size: 17px;
     border: solid 3px #333333;
     margin: 35px 35px 0px 0px;
+    user-select: none;
     transition: 0.3s;
     a{
         text-decoration: none;
