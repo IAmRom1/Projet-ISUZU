@@ -1,6 +1,0 @@
-Temps programation:
-HTML: 2h20
-SCSS: 7h15
-JS: 2h15
-
-Totale: 11h50

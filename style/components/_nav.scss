@@ -19,6 +19,123 @@ nav{
             margin-right: 113px;
         }
     }
+    img{
+        position: absolute;
+        top: 25%;
+        right: 5%;
+        visibility: hidden;
+    }
+}
+.Slider-bar{
+    visibility: hidden;
+    z-index: 999999;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: $white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    img{
+        width: 22.11px;
+        height: 22.11px;
+        position: absolute;
+        top: 2.5%;
+        right: 5%;
+
+    }p{
+        color: $Gray2;
+        font-family: $font-kanit;
+        font-size: 18px;
+        text-transform: uppercase; 
+        margin: 61px 34px 34px 34px;
+        letter-spacing: 0.9px;
+    }ul{
+        display: flex;
+        flex-direction: column;
+        li{
+            margin: 7px 34px;
+            font-size: 18px;
+            font-family: $font-kanit;
+            a{
+                text-decoration: none;
+                color: $Gray2;
+                font-weight: 600;
+                text-transform: uppercase;
+            }
+        }
+    }button{
+        width: 208px;
+        @include btn-Red;
+        margin-left: 34px;
+        &::after{
+            content: "";
+            position: absolute;
+            background-image: url("../../Assets/icons/volant.png");
+            width: 16px;
+            height: 16px;
+            top: 372px;
+            left: 67px;
+        }
+    }
+
+}.bottom-nav{
+    visibility: hidden;
+    z-index: 999999999;
+    position: fixed;
+    bottom: 0%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    .rect-L{
+        width: 50%;
+        height: 70px;
+        background: $Red-2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            font-size: 17px;
+            font-family: $font-kanit;
+            font-weight: normal;
+            color: $white;
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: 24px;
+                left: 79px;
+                width: 16px;
+                height: 16px;
+                background-image: url(../../Assets/icons/volant.png);
+            }
+        }
+    }.rect-R{
+        width: 50%;
+        height: 70px;
+        background: $Gray2;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        p{
+            a{
+            font-size: 17px;
+            font-family: $font-kanit;
+            font-weight: normal;
+            color: $white;
+            text-decoration: none;
+            }
+            &::after{
+                content: "";
+                position: absolute;
+                bottom: 24px;
+                right: 179px;
+                width: 16px;
+                height: 16px;
+                background-image: url(../../Assets/icons/phone.png);
+        }
+    }
+    
+}
 }
 @mixin title{
     margin-top: 107px;
